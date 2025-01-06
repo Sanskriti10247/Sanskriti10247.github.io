@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Music Player</title>
+</head>
+<body>
+  <h1>Music Player</h1>
+  <input type="file" id="fileInput">
+  <button id="addMusicBtn">Add Music</button>
+  
+  <div id="playlist"></div>
+
+  <div id="songTemplate" class="song-item" style="display: none;">
+    <span class="song-name"></span>
+    <button class="delete-btn">Delete</button>
+  </div>
+
+  <audio id="audioPlayer" controls>
+    <source id="audioSource" src="">
+  </audio>
+  
+
+
+
+  <div class="controls">
+
+  <button id="prevBtn">Previous</button>
+  <button id="playPauseBtn">Play</button>
+  <button id="nextBtn">Next</button>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
